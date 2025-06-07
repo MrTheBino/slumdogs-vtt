@@ -8,6 +8,8 @@ This system includes all items, spells and skills in german language from the ru
 
 System author: Alexander "MrTheBino" Bierbrauer
 
+Manual install foundry: https://github.com/MrTheBino/slumdogs-vtt/releases/latest/download/system.json
+
 ## supported languages
 
 * German
