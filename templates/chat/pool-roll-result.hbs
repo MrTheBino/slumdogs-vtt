@@ -1,0 +1,22 @@
+<form class="roll-card">
+  <div class="card-title">
+    {{label}}
+  </div>
+  <div class="roll-result">
+    <div class="roll-successes">
+      <span>{{localize 'SLUMDOGS.Labels.successes'}}: {{numSuccesses}}</span>
+    </div>
+    <div class="roll-row">
+      <span>{{localize 'SLUMDOGS.Labels.successes_on'}}: {{rollDiceFaceSuccess}}+</span>
+    </div>
+  </div>
+
+<div class="roll-result">
+    <div class="roll-row-singles">
+        {{#each singleRolls as |sr|}}
+            <span>{{sr}}</span>
+        {{/each}}
+    </div>
+  </div>
+
+</form>

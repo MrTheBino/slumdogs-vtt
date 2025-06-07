@@ -1,0 +1,57 @@
+<form class="{{cssClass}}" autocomplete="off">
+  <header class="sheet-header">
+    <img class="profile-img" src="{{item.img}}" data-edit="img" title="{{item.name}}"/>
+    <div class="header-fields">
+      <h1 class="charname"><input name="name" type="text" value="{{item.name}}" placeholder="Name"/></h1>
+    </div>
+  </header>
+
+  {{!-- Sheet Tab Navigation --}}
+  <nav class="sheet-tabs tabs" data-group="primary">
+    <a class="item" data-tab="description">{{localize 'SLUMDOGS.Labels.item_data'}}</a>
+  </nav>
+
+  {{!-- Sheet Body --}}
+  <section class="sheet-body">
+    <section class="grid grid-3col">
+            <div class="resource flex-group-center">
+                <label for="system.damage" class="resource-label">{{localize 'SLUMDOGS.Labels.quantity'}}</label>
+                <div class="resource-content flexrow flex-center flex-between">
+                    <input type="text" name="system.quantity" value="{{system.quantity}}" data-dtype="Number" />
+                </div>
+            </div>
+
+            <div class="resource flex-group-center">
+                <label for="system.costs" class="resource-label">{{localize 'SLUMDOGS.Labels.costs'}}</label>
+                <div class="resource-content flexrow flex-center flex-between">
+                    <input type="text" name="system.costs" value="{{system.costs}}" data-dtype="Number" />
+                </div>
+            </div>
+
+            <div class="resource flex-group-center">
+                <label for="system.isLegal" class="resource-label">{{localize 'SLUMDOGS.Labels.legal'}}</label>
+                <div class="resource-content flexrow flex-center flex-between">
+                    <input type="text" name="system.isLegal" value="{{system.isLegal}}" data-dtype="String" />
+                </div>
+            </div>
+        </section>
+
+        <section class="">
+
+
+            <div class="resource flex-group-center">
+                <label for="system.effectDescription" class="resource-label">{{localize 'SLUMDOGS.Labels.effect'}}</label>
+                <div class="resource-content flexrow flex-center flex-between">
+                    <input type="text" name="system.effectDescription" value="{{system.effectDescription}}" data-dtype="String" />
+                </div>
+            </div>
+        </section>
+
+    {{!-- Description Tab --}}
+    <div class="tab" data-group="primary" data-tab="description">
+      {{!-- Editors must receive enriched text data from getData to properly handle rolls --}}
+      {{editor enrichedDescription target="system.description" engine="prosemirror" button=true editable=editable}}
+    </div>
+  </section>
+
+</form>

@@ -1,0 +1,51 @@
+<form class="{{cssClass}}" autocomplete="off">
+    <header class="sheet-header">
+        <img class="profile-img" src="{{item.img}}" data-edit="img" title="{{item.name}}" />
+        <div class="header-fields">
+            <h1 class="charname"><input name="name" type="text" value="{{item.name}}" placeholder="Name" /></h1>
+        </div>
+
+    </header>
+
+    {{!-- Sheet Tab Navigation --}}
+    <nav class="sheet-tabs tabs" data-group="primary">
+        <a class="item" data-tab="description">Description</a>
+    </nav>
+
+    {{!-- Sheet Body --}}
+    <section class="sheet-body">
+
+        <section class="grid grid-3col">
+            <div class="resource flex-group-center">
+                <label for="system.attrName" class="resource-label">Attribut</label>
+                <div class="resource-content flexrow flex-center flex-between">
+                    <input type="text" name="system.attrName" value="{{system.attrName}}" data-dtype="String" />
+                </div>
+            </div>
+
+            <div class="resource flex-group-center">
+                <label for="system.attrDice" class="resource-label">Attribut Wert</label>
+                <div class="resource-content flexrow flex-center flex-between">
+                    <input type="text" name="system.attrDice" value="{{system.attrDice}}" data-dtype="Number" />
+                </div>
+            </div>
+        </section>
+
+        <section class="grid grid-3col">
+            <div class="resource flex-group-center">
+                <label for="system.skillDice" class="resource-label">Fertigkeitswert</label>
+                <div class="resource-content flexrow flex-center flex-between">
+                    <input type="text" name="system.skillDice" value="{{system.skillDice}}" data-dtype="String" />
+                </div>
+            </div>
+
+            <div class="resource flex-group-center">
+                <label for="system.totalDice" class="resource-label">Wert Total (inkl. Mods)</label>
+                <div class="resource-content flexrow flex-center flex-between">
+                    <input type="text" name="system.totalDice" value="{{system.totalDice}}" data-dtype="Number" />
+                </div>
+            </div>
+        </section>
+    </section>
+
+</form>

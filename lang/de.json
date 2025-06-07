@@ -1,0 +1,80 @@
+{
+  "SLUMDOGS": {
+    "Labels": {
+      "species": "Spezies",
+      "health": "Hitpoints",
+      "armor": "Panzerung",
+      "essenz": "Essenz",
+      "karma": "Karma",
+      "attributes": "Attribute",
+      "overview": "Übersicht",
+      "skills": "Fertigkeiten",
+      "weapons": "Waffen",
+      "boosters": "Booster",
+      "items": "Ausrüstung",
+      "biography": "Biografie",
+      "successes": "Erfolge",
+      "successes_on": "Erfolge auf ",
+      "roll": "Würfeln",
+      "effect": "Wirkung",
+      "costs": "Kosten",
+      "item_data":"Werte",
+      "damage": "Schaden",
+      "skillDice": "Wert",
+      "attrName": "Attribut",
+      "attrDice": "Attr-Wert",
+      "totalDice": "Gesamtwürfel",
+      "quantity": "Menge",
+      "ini": "Ini",
+      "attack": "Angriff",
+      "defense": "Abwehr",
+      "custom_roll": "Anzahl D6",
+      "custom_roll_dialog": "Würfeldialog",
+      "legal": "Legal"
+    },
+    "Ability": {
+      "Strength": { "long": "Stärke", "abbr": "str" },
+        "Dexterity": { "long": "Geschickl.", "abbr": "dex" },
+        "Willpower": { "long": "Willenskraft", "abbr": "will" },
+        "Logic": { "long": "Logik", "abbr": "log" },
+        "Charisma": { "long": "Charisma", "abbr": "cha" },
+        "Edge": { "long": "Edge", "abbr": "edg" },
+        "Perception": { "long": "Wahrnehmung", "abbr": "per" },
+        "Dodge": { "long": "Ausweichen", "abbr": "dog" },
+        "Survival": { "long": "Überleben", "abbr": "sur" }
+    },
+    "SheetLabels": {
+      "Actor": "Slumdogs Actor Sheet",
+      "Item": "Slumdogs Item Sheet"
+    },
+    "Item": {
+      "Spell": {
+        "SpellLVL": "Level {level} Spells",
+        "AddLVL": "Add LVL {level}"
+      }
+    },
+    "Effect": {
+      "Source": "Source",
+      "Toggle": "Toggle Effect",
+      "Temporary": "Temporary Effects",
+      "Passive": "Passive Effects",
+      "Inactive": "Inactive Effects"
+    }
+  },
+
+  "TYPES": {
+    "Actor": {
+      "character": "Character",
+      "npc": "NPC"
+    },
+    "Item": {
+      "item": "Ausrüstung",
+      "feature": "Feature",
+      "spell": "Spell",
+      "booster": "Booster",
+      "weapon": "Waffe",
+        "skill": "Fertigkeit"
+    }
+    
+  }
+}
