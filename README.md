@@ -15,3 +15,5 @@ Manual install foundry: https://github.com/MrTheBino/slumdogs-vtt/releases/lates
 * German
 
 The system is translatable via the JSON files in the lang/ directory.
+
+![alt text](screenshot.jpg "interface preview")
