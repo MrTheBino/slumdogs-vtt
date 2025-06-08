@@ -1,4 +1,4 @@
-function addShowDicePromise(promises, roll) {
+export function addShowDicePromise(promises, roll) {
   if (game.dice3d) {
     // we pass synchronize=true so DSN dice appear on all players' screens
     promises.push(game.dice3d.showForRoll(roll, game.user, true, null, false));
@@ -54,7 +54,7 @@ async function rollDialogV1Callback(actor, html) {
     const dicePoolRoll = new Roll(rollFormula, actorRollData);
     await dicePoolRoll.evaluate();
     const rollResult = dicePoolRoll.terms[0].results
-    console.log(rollResult);
+    //console.log(rollResult);
 
     let numSuccesses = 0;
     let singleRolls = []
@@ -76,7 +76,7 @@ async function rollDialogV1Callback(actor, html) {
     renderpoolRollResult(actor,rollDialogVars);
 }
 
-async function renderpoolRollResult(actor, rollResult) {
+export async function renderpoolRollResult(actor, rollResult) {
   const html = await renderTemplate(
     "systems/slumdogs-vtt/templates/chat/pool-roll-result.hbs",
     rollResult

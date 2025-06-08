@@ -9,6 +9,7 @@ import { preloadHandlebarsTemplates } from './helpers/templates.mjs';
 import { SLUMDOGS } from './helpers/config.mjs';
 // Import DataModel classes
 import * as models from './data/_module.mjs';
+import {SlumdogsCombat} from './combat.mjs';
 
 /* -------------------------------------------- */
 /*  Init Hook                                   */
@@ -52,6 +53,8 @@ Hooks.once('init', function () {
     skill: models.SlumdogsSkill,
     weapon: models.SlumdogsWeapon
   }
+
+  CONFIG.Combat.documentClass = SlumdogsCombat;
 
   // Active Effects are never copied to the Actor,
   // but will still apply to the Actor from within the Item

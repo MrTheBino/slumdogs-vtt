@@ -255,7 +255,7 @@
           </section>
         </section>
       </section>
-      <section class="grid grid-1-col">
+      <section class="grid grid-2-col">
         <div class="resource flex-group-center">
             <label class="resource-label">&nbsp;</label>
             <div class="resource-content flexrow flex-center flex-between rollable" data-roll="1"
@@ -263,6 +263,12 @@
               <button><i class="fas fa-dice-d6"></i>{{localize 'SLUMDOGS.Labels.custom_roll_dialog'}}</button>
             </div>
           </div>
+          <div class="resource flex-group-center">
+          <label for="system.iniDice" class="resource-label">{{localize 'SLUMDOGS.Labels.ini'}}</label>
+          <div class="resource-content flexrow flex-center flex-between">
+            <input type="text" name="system.iniDice" value="{{system.iniDice}}" data-dtype="Number" />
+          </div>
+        </div>
       </section>
     </div>
 

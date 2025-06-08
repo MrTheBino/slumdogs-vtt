@@ -25,12 +25,13 @@
       "attrDice": "Attr-Wert",
       "totalDice": "Gesamtwürfel",
       "quantity": "Menge",
-      "ini": "Ini",
+      "ini": "Initiativewürfel",
       "attack": "Angriff",
       "defense": "Abwehr",
       "custom_roll": "Anzahl D6",
       "custom_roll_dialog": "Würfeldialog",
-      "legal": "Legal"
+      "legal": "Legal",
+      "initiativeRoll": "Initiative"
     },
     "Ability": {
       "Strength": { "long": "Stärke", "abbr": "str" },
