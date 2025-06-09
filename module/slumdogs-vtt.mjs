@@ -11,6 +11,7 @@ import { SLUMDOGS } from './helpers/config.mjs';
 import * as models from './data/_module.mjs';
 import {SlumdogsCombat} from './combat.mjs';
 
+import {rollDialogV1} from './roll_dialog.mjs';
 /* -------------------------------------------- */
 /*  Init Hook                                   */
 /* -------------------------------------------- */
@@ -22,6 +23,7 @@ Hooks.once('init', function () {
     SlumdogsActor,
     SlumdogsItem,
     rollItemMacro,
+    rollDialogV1
   };
 
   // Add custom constants for configuration.
@@ -98,6 +100,7 @@ Hooks.once('ready', function () {
 /* -------------------------------------------- */
 /*  Hotbar Macros                               */
 /* -------------------------------------------- */
+
 
 /**
  * Create a Macro from an Item drop.

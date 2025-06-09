@@ -31,7 +31,9 @@
       "custom_roll": "Anzahl D6",
       "custom_roll_dialog": "Würfeldialog",
       "legal": "Legal",
-      "initiativeRoll": "Initiative"
+      "initiativeRoll": "Initiative",
+      "warning": "Warnung",
+      "selected_token_first": "Bitte wähle zuerst einen Token aus."
     },
     "Ability": {
       "Strength": { "long": "Stärke", "abbr": "str" },

@@ -20,7 +20,7 @@
       "thumbnail": "systems/slumdogs-vtt/assets/anvil-impact.png"
     }
   ],
-  "version": "0.6.0",
+  "version": "0.7.0",
   "compatibility": {
     "minimum": 13,
     "verified": "13.341"
@@ -45,6 +45,18 @@
       "label": "Slumdogs",
       "path": "packs/slumdogs",
       "type": "Item",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "slumdogs-vtt",
+      "flags": {}
+    },
+    {
+      "name": "slumdogs-vtt-macros",
+      "label": "Slumdogs Macros",
+      "path": "packs/slumdogs-vtt-macros",
+      "type": "Macro",
       "ownership": {
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
